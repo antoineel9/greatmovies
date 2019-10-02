@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace Cinema.Pages
+{
+    public class IndexModel : PageModel
+    {
+        private object Movie1;
+
+        public string [] GreatMovies{ get; set; }
+        public void OnGet()
+        {
+            GreatMovies  = new string [] { "Movie1", "Movie2",  };
+            
+        }
+    }
+}
